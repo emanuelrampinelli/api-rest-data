@@ -10,7 +10,7 @@ public class DateTimeUtil {
     public int calculaIntervaloDataAno(DateTime data1, DateTime data2) {
 
         Period period = new Period(data1, data2);
-        return period.getYears();
+        return period.getYears() >= 0 ? period.getYears() : -1;
     }
 
     public DateTime stringToDateTime(String data) {
