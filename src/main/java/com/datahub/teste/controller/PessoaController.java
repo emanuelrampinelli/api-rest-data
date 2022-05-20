@@ -20,7 +20,6 @@ public class PessoaController {
     public Pessoa calculaIdade(@PathVariable(value = "dataNascimento") String dataNascimento) {
 
         return pessoaService.calculaIdade(dataNascimento);
-
     }
 
 }
